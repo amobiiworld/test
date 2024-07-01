@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fast Weather App - SkyStats</title>
+    <link rel="icon" type="image/x-icon" href="https://openweathermap.org/img/wn/04d@2x.png">
+
+    <!-- Meta tag -->
+
+    <meta name="title" content="Fast Weather App - SkyStats">
+    <meta name="description" content="SkyStats is a fast and reliable weather app providing accurate weather forecasts, real-time updates, and detailed weather information for your location.">
+    <meta name="keywords" content="weather app, SkyStats, weather forecast, real-time weather, accurate weather, local weather">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="SkyStats">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Fast Weather App - SkyStats">
+    <meta property="og:description" content="SkyStats is a fast and reliable weather app providing accurate weather forecasts, real-time updates, and detailed weather information for your location.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="">
+    <meta name="twitter:card" content="">
+    <meta name="twitter:title" content="Fast Weather App - SkyStats">
+    <meta name="twitter:description" content="SkyStats is a fast and reliable weather app providing accurate weather forecasts, real-time updates, and detailed weather information for your location.">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:site" content="">
+
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+
+    <!-- Custom style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    
+    <!-- Navbar start -->
+    <header class="w-header" data-aos="fade-down">
+      <div class="container">
+        <div class="header-bg">
+          <h1>SkyStats App</h1>
+          <div class="search-container">
+            <input type="text" id="cityInput" placeholder="Enter city name" />
+            <button onclick="getWeather()">Search</button>
+          </div>
+          <nav>
+            <button class="nav-toggle" aria-label="toggle navigation">
+              <span class="hamburger"></span>
+            </button>
+            <ul class="nav-list">
+              <li><a href="#" onclick="getWeather('London')">London</a></li>
+              <li><a href="#" onclick="getWeather('New York')">New York</a></li>
+              <li><a href="#" onclick="getWeather('Tokyo')">Tokyo</a></li>
+              <li><a href="#" onclick="getWeather('Sydney')">Sydney</a></li>
+            </ul>
+          </nav>
+        </div>
+    </div>
+    </header>
+    <!-- Navbar end  -->
+
+    <!-- Main water div start -->
+    <main>
+      <div class="weather-info" id="weatherInfo" data-aos="fade-up">
+        <!-- Weather data will be displayed here -->
+      </div>
+    </main>
+    <!-- Main water div start -->
+
+    <!-- Footer start  -->
+    <footer>
+      <p>&copy; 2024 SkyStats App</p>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Js File  -->
+    <script src="/js/custom.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <!-- Aos  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+</html>
